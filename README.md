@@ -3,7 +3,7 @@ Building a Chatbot that answers questions related to our data trained on top of 
 
 Modern chatbots serve as digital agents, offering 24/7 customer support across industries. They handle real-time, multilingual inquiries, provide data-driven insights, and scale easily, making them cost-effective. Powered by large language models (LLMs), chatbots understand conversational language but need thoughtful, personalized responses to be more than basic assistants. Integrating internal knowledge bases enables chatbots to deliver tailored, contextual replies. The Retrieval Augmented Generation (RAG) model enhances chatbot performance by grounding responses in factual data, reducing errors. Using Amazon Bedrock's Knowledge Bases with vector databases enables more personalized, relevant responses in this context.
 
-#### Retrieval Augemented Generation
+## Retrieval Augemented Generation
 RAG is an approach to natural language generation that incorporates information retrieval into the generation process. RAG architecture involves two key workflows: data preprocessing 
 through ingestion, and text generation using enhanced context.
 
@@ -27,7 +27,7 @@ Before executing, ensure you have the following prerequisites:
 - **AWS Bedrock:** AWS Bedrock access and IAM role to invoke models. Access to embedding models.
 - **AWS Cloudformation:** AS IAM acess to create resources using cloudformation stack.
 
-### Steps to Create KnowledgeBase and Lambda Layer
+## Steps to Create KnowledgeBase and Lambda Layer
 1.On the Amazon S3 console, choose Buckets in the navigation pane.
 2.Click Create bucket.
 3.Name the bucket knowledgebase-<*your-account-number*>.
@@ -49,7 +49,7 @@ Before executing, ensure you have the following prerequisites:
 19.Create a cloudformation with the template in this repo cfn directory and use the knowledgebase ID you just created.
 20.Once the resources in cloudformation is ready, our chatbot is ready to execute.
 
-### Execution
+## Installation & Execution
 
 1. **Clone the repository:**
    ```bash
@@ -69,5 +69,5 @@ Before executing, ensure you have the following prerequisites:
     python -m streamlit run .\streamlit\chatbot.py
    ```
 
-### Conclusion
+## Conclusion
 This example highlighted the importance of contextual chatbots and the complexities of RAG architecture for data ingestion and text generation. It introduced how Knowledge Bases for Amazon Bedrock simplifies the process by providing a fully managed, serverless RAG system with a vector store. A solution architecture and sample code were provided to demonstrate how to create contextual chatbot responses. For further details, refer to the Amazon Bedrock Developer Guide and Knowledge Base APIs.
