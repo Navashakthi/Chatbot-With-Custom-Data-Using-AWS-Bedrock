@@ -25,6 +25,7 @@ Before executing, ensure you have the following prerequisites:
 - **IAM Role:** An IAM role with the necessary permissions for SageMaker to access S3 and ECR.
 - **AWS CLI:** AWS CLI configured with your access and secret keys, and the region set.
 - **AWS Bedrock:** AWS Bedrock access and IAM role to invoke models. Access to embedding models.
+- **AWS Cloudformation:** AS IAM acess to create resources using cloudformation stack.
 
 ### Installation
 
