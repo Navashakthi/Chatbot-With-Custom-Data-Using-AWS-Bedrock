@@ -16,3 +16,28 @@ The solution in this example utilizes a chatbot built with a Streamlit applicati
 - Knowledge Bases for Amazon Bedrock for data ingestion
 - Amazon OpenSearch Serverless as a vector store to store text embeddings
 - AWS Lambda as the API function to call the Knowledge Bases API
+
+## Prerequisites
+Before executing, ensure you have the following prerequisites:
+
+- **AWS Account**: An active AWS account with permissions to use SageMaker, S3, and IAM services.
+- **S3 Bucket:** An S3 bucket where training data and model artifacts will be stored.
+- **IAM Role:** An IAM role with the necessary permissions for SageMaker to access S3 and ECR.
+- **AWS CLI:** AWS CLI configured with your access and secret keys, and the region set.
+- **AWS Bedrock:** AWS Bedrock access and IAM role to invoke models. Access to embedding models.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-repo/project-name.git
+   cd project-name
+   ```
+2. **Install the necessary Python packages:**
+   ```bash
+   pip install boto3 streamlit
+   ```
+3. **Ensure AWS CLI is installed and configured on your machine:**
+   ```bash
+   aws configure
+   ```
